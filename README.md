@@ -1,2 +1,0 @@
-StoRM FlowSE
-minordddddddfdfd
