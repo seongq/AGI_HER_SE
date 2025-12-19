@@ -60,34 +60,3 @@ for model in models_path:
 
 
 
-
-
-# Define the base command
-# base_command = "python enhancement.py"
-
-# # Iterate over all combinations of checkpoints, datasets, and N values
-# for checkpoint in checkpoints:
-#     for dataset in datasets:
-#         for N in N_values:
-#             # Define the output directory based on the dataset, checkpoint, and N
-#             enhanced_dir = f"/path/to/enhanced/{dataset.split('/')[-1]}_{checkpoint.split('/')[-1].split('.')[0]}_N{N}"
-            
-#             # Construct the command
-#             command = (
-#                 f"{base_command} "
-#                 f"--test_dir {dataset} "
-#                 f"--enhanced_dir {enhanced_dir} "
-#                 f"--ckpt {checkpoint} "
-#                 f"--mode storm "
-#                 f"--N {N}"
-#             )
-            
-#             print(f"Running command: {command}")
-            
-#             # Execute the command
-#             result = subprocess.run(command, shell=True, text=True)
-            
-#             # Check for errors
-#             if result.returncode != 0:
-#                 print(f"Error occurred while processing {dataset} with {checkpoint} and N={N}.")
-#                 print(result.stderr)
